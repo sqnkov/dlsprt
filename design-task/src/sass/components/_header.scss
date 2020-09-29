@@ -1,0 +1,42 @@
+header {
+	background: $color-main-dark-blue;
+	padding: 20px 0;
+	.header-logo {
+		display: block;
+		max-width: 180px;
+		img {
+			width: 100%;
+		}
+	}
+
+	#dropdownMenuButton {
+		background: $color-main-dark-blue;
+		border-radius: 100em;
+		color: $color-text-sub;
+		border-color: $color-text-sub !important;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+}
+
+#sub-nav {
+	padding: 30px 0;
+	.nav-sponsors {
+		.sponsor {
+			color: $color-text-sub;
+			font-size: 14px;
+			border-right: 1px solid $color-border;
+			margin-right: 20px;
+			.sponsor-logo {
+				width: 30px;
+				img {
+					width: 100%;
+				}
+			}
+			.sponsor-info {
+				width: 90px;
+				margin: 0 10px;
+				line-height: 1.5em;
+			}
+		}
+	}
+}

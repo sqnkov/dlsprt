@@ -1,0 +1,54 @@
+#footer {
+	.container {
+		border-top: 1px solid $color-border;
+		padding: 5rem 0;
+
+		p {
+			line-height: 1.5em;
+		}
+
+		.logo {
+			width: 12rem;
+			margin-bottom: 2rem;
+		}
+
+		.text-secondary {
+			font-size: 1.4rem;
+		}
+
+		.footer-section {
+			.section-title {
+				color: #fff;
+				font-size: 1.5rem;
+				font-weight: bold;
+				margin-bottom: 2.2rem;
+			}
+			.section-links {
+				li {
+					margin-bottom: 1rem;
+					a {
+						font-size: 1.4rem;
+						text-decoration: none;
+						color: $color-text-sub;
+						&:hover {
+							text-decoration: underline;
+							color: #fff;
+						}
+					}
+				}
+			}
+
+			.section-social {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.social-item {
+					width: 3rem;
+					height: 3rem;
+					border-radius: 100%;
+					background-color: $color-main-dark-blue;
+				}
+			}
+		}
+	}
+}

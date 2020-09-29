@@ -1,0 +1,60 @@
+.widget-sport-badge {
+	text-align: center;
+	width: 6rem;
+	.badge-icon {
+		width: 100%;
+		padding: 1.8rem;
+		border-radius: 1.5rem;
+		color: #fff !important;
+		background: $color-main-dark-blue;
+		border: 1px solid transparent;
+		transition: all 0.15s ease-in;
+		.icon {
+			font-size: 2.4rem;
+		}
+	}
+	.badge-name {
+		margin-top: 1rem;
+		color: $color-text-sub;
+		font-size: 1.4rem;
+	}
+
+	&.type {
+		&-sports {
+			.icon {
+				color: #ab2931;
+			}
+		}
+		&-gaming {
+			.icon {
+				color: #8c86de;
+			}
+		}
+		&-action {
+			.icon {
+				color: #e9a02d;
+			}
+		}
+	}
+
+	&:hover {
+		cursor: pointer;
+		.badge-icon {
+			border: 1px solid $color-accent-green;
+		}
+	}
+}
+
+.widget-provider-badge {
+	@include flex-center;
+	background: #fff;
+	padding: 1.4rem;
+	width: 14rem;
+	border-radius: 0.5rem;
+	.provider-logo {
+		width: 60px;
+		img {
+			max-width: 100%;
+		}
+	}
+}

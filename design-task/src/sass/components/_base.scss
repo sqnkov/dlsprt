@@ -1,0 +1,15 @@
+body,
+html {
+	background: $color-main-mid-blue;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 10px !important;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
+@import "buttons";
+@import "widgets";
+@import "header";
+@import "footer";

@@ -1,0 +1,55 @@
+.widget-card {
+	background: $color-main-dark-blue;
+	border-radius: 2rem;
+	min-height: 28rem;
+	position: relative;
+	background: url("../images/bolt.png") no-repeat right center/24rem;
+	background-color: $color-main-dark-blue;
+	.card-content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		padding: 3rem;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-flow: column;
+		.content-title {
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.content {
+			color: $color-text-sub;
+			font-size: 1.4rem;
+		}
+		.content-action {
+			.btn {
+				padding: 6px 32px;
+			}
+		}
+	}
+	&.promo {
+		background: url("../images/manly.jpg") no-repeat right center/100%;
+		.card-content {
+			border-radius: 2rem 0 0 2rem;
+			justify-content: center;
+			max-width: 40%;
+			background-color: $color-main-dark-blue;
+
+			.content-title {
+				margin-bottom: 2rem;
+			}
+
+			&::after {
+				content: url("../images/mini-ribbon.png");
+				position: absolute;
+				top: 0;
+				right: -3rem;
+			}
+		}
+	}
+}
